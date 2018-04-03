@@ -1,0 +1,11 @@
+{
+    "name": "aleksandari-ivanov/posts",
+    "description": "Posts module for Yii Cms",
+    "authors": [
+        {
+            "name": "Aleksandar Ivanov",
+            "email": "aleksandar.ivanov@mentormate.com"
+        }
+    ],
+    "require": {}
+}
