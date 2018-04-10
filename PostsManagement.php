@@ -5,7 +5,7 @@ namespace app\modules\posts;
 /**
  * posts module definition class
  */
-class PostsManegement extends \yii\base\Module
+class PostsManagement extends \yii\base\Module
 {
     /**
      * @inheritdoc
