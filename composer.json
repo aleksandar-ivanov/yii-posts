@@ -1,5 +1,5 @@
 {
-    "name": "aleksandar-ivanov/posts",
+    "name": "aleksandar-ivanov/aivanov-module-posts",
     "description": "Posts module for Yii Cms",
     "authors": [
         {
@@ -7,6 +7,7 @@
             "email": "aleksandar.ivanov@mentormate.com"
         }
     ],
+    "type" : "aivanov-module",
     "require": {
 	"composer/installers": "~1.0"
     }
