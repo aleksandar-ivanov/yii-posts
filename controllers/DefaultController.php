@@ -2,6 +2,8 @@
 
 namespace app\modules\posts\controllers;
 
+use app\modules\posts\models\Posts;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 
 /**
@@ -15,11 +17,14 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index', ['this' => $this]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Posts::find(),
+            'pagination' => [
+                'pageSize' => 20,
+            ]
+        ]);
+
+        return $this->render('index', ['provider' => $dataProvider]);
     }
 
-    public function actionTest()
-    {
-        return $this->render('test');
-    }
 }
