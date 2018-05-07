@@ -22,6 +22,11 @@ class PostsManagement extends \yii\base\Module
         // custom initialization code goes here
     }
 
+    public function canBeManaged()
+    {
+        return !\Yii::$app->user->isGuest && \Yii::$app->user->can('managePost');
+    }
+
     public function getIcon()
     {
         return 'comments';
