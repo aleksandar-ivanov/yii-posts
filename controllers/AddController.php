@@ -17,7 +17,7 @@ class AddController extends \yii\web\Controller
             $model->beforeValidate();
             if ($model->validate()) {
                 $model->save();
-                return $this->goBack();
+                return $this->goBack((!empty(Yii::$app->request->referrer) ? Yii::$app->request->referrer : null));
             }
         }
 
